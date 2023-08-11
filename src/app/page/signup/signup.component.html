@@ -16,32 +16,32 @@
 
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Password:</mat-label>
-                        <input [(ngModel)]="user.password" name="password" type="password" matInput placeholder="Enter password">
+                        <input required [(ngModel)]="user.password" name="password" type="password" matInput placeholder="Enter password">
                     </mat-form-field>
 
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Firstname:</mat-label>
-                        <input [(ngModel)]="user.firstname" name="firstname" matInput placeholder="Enter firstname">
+                        <input required [(ngModel)]="user.firstname" name="firstname" matInput placeholder="Enter firstname">
                     </mat-form-field>
 
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Lastname:</mat-label>
-                        <input [(ngModel)]="user.lastname" name="lastname" matInput placeholder="Enter lastname">
+                        <input required [(ngModel)]="user.lastname" name="lastname" matInput placeholder="Enter lastname">
                     </mat-form-field>
                     
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Email:</mat-label>
-                        <input [(ngModel)]="user.email" name="email" type="email" matInput placeholder="Enter email">
+                        <input required [(ngModel)]="user.email" name="email" type="email" matInput placeholder="Enter email">
                     </mat-form-field>
                     
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Telephone:</mat-label>
-                        <input [(ngModel)]="user.telephone" name="telephone" matInput placeholder="Enter telephone">
+                        <input required [(ngModel)]="user.telephone" name="telephone" matInput placeholder="Enter telephone">
                     </mat-form-field>
 
                     <div class="container text-center">
                         <button mat-raised-button color="primary">Register</button>
-                        <button style="margin-left: 20px;" mat-raised-button color="accent">Clear</button>
+                        <button type="reset" style="margin-left: 20px;" mat-raised-button color="accent">Clear</button>
                     </div>
                 </form>
                 <br><br><br>
