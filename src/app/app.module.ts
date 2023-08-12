@@ -10,12 +10,16 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 
 //Components
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SignupComponent } from './page/signup/signup.component';
 import { LoginComponent } from './page/login/login.component';
+import { HomeComponent } from './page/home/home.component';
 
 //resource
 import { FormsModule } from '@angular/forms';
@@ -26,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     NavbarComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     FormsModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
